@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "My Extension",
+  "description": "Ext tracking request",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "background": {
+    "scripts": [
+      "assets/background.js"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "*://developer.mozilla.org/"
+  ]
+}
